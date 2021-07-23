@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coupang login</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="login-header">
+            <a href="#">
+                <img class="login-logo" src="images/logo.png" alt="로고">
+            </a>
+        </header>
+
+        <main class="login-main">
+            <form action="#" method="POST" class="login-form" onsubmit="return valid()" novalidate>
+                <div class="input">
+                    <div class="user-input valid" id="user-input-email">
+                        <img src="images/icon_letter.svg" alt="이메일 입력" class="input-icon valid" id="email-icon">
+                        <input type="email" class="input-box" id="id-input" name="id-input" placeholder="아이디(이메일)" onchange="() => inputChange()">
+                    </div>
+                    <span class="invalid-text" id="invalid-id">아이디(이메일)를 입력해 주세요.</span>
+                </div>
+                <div class="input">
+                    <div class="user-input valid" id="user-input-pw">
+                        <img src="images/icon_lock.svg" alt="비밀번호 입력" class="input-icon valid" id="pw-icon">
+                        <input type="password" class="input-box password" id="pw-input" name="pw-input" placeholder="비밀번호" onchange="inputChange()">
+                        <img src="images/icon_show.svg" alt="비밀번호 보이기" class="toggle-icon icon-show valid" id="toggle-icon">
+                    </div>
+                    <span class="invalid-text" id="invalid-pw">비밀번호를 입력해 주세요.</span>
+                </div>
+                <div class="login-check checked">
+                    <div class="user-check checked">
+                        <label for="auto-login">
+                            <input type="checkbox" class="auto-login" id="auto-login">
+                            <span class="auto-login">자동로그인</span>
+                        </label>
+                        <div class="tip" id="tip">
+                            <img src="images/tooltip_arrow.svg" alt="말풍선">
+                            <div>
+                                <span>
+                                    개인 정보 보호를 위해 본인 기기에서만 이용해 주세요.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="find-id">
+                        <a href="#">
+                                아이디(이메일)/비밀번호 찾기
+                            <img src="images/right-arrow.svg" alt="아이디/비밀번호 찾기 버튼" class="symbol">
+                        </a>
+                    </div>
+                </div>
+                <div class="input-submit">
+                    <input type="submit" class="button initialization" id = "login-button" value="로그인">
+                </div>
+            </form>
+            <hr>
+            <a href="#">
+                <button id="button_signup" class="button signup">
+                    회원가입
+                </button>
+            </a>
+        </main>
+
+        <footer class="login-footer">
+            <div>©Coupang Corp. All rights reserved.</div>
+        </footer>
+        <script src="js/main.js"></script>
+        <script src="js/validation.js"></script>
+    </body>
+</html>
