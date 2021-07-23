@@ -1,0 +1,239 @@
+*{
+    font-family: Noto Sans, sans-serif;
+}
+
+html{
+    font-family: Noto Sans, sans-serif;
+}
+
+.login-header{
+    margin-top: 236px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-main{
+    width: 576px;
+    margin-top: 50px;
+    margin-left: calc(50% - 576px/2);
+    margin-bottom: 40px;
+}
+
+form > .input{
+    width: 576px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.user-input{
+    width: 576px;
+    height: 50px;
+    flex-wrap: nowrap;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+}
+
+.user-input.invalid{
+    border-color: #E52528;
+}
+
+.input-icon{
+    width: 45px;
+    height: 50px;
+    margin: -1px 0px -1px -1px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top: 1px solid #CCCCCC;
+    border-right: .5px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    box-sizing: border-box;
+}
+
+.input-icon.invalid{
+    border-color: #E52528 #CCCCCC #E52528 #E52528;
+}
+
+.input-box{
+    font-size: 16px;
+    border: none;
+    width: 531px;
+    padding: 14px;
+    display: absolute;
+    top: 0px;
+    margin-left: 45px;
+}
+
+::placeholder{
+    font-size: 16px;
+    line-height: 16px;font-weight: 500;
+    color: #929292;
+}
+
+.invalid-text{
+    margin-top: 10px;
+    margin-left: 12px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #E52528;
+    display: none;
+}
+
+.login-check{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 62px;
+    margin-top: 22px;
+    width: 576px;
+}
+
+.user-check{
+    width: 275px;
+    position: relative;
+}
+
+.login-check.checked{
+    margin-bottom: 10px;
+}
+
+.user-check > label{
+    width: 275px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.user-check input#auto-login{
+    width: 24px;
+    height: 24px;
+    background: #F4F4F4;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, .25);
+    border-radius: 0.791667px;
+    margin: 0px 6px 0px 0px;
+}
+
+.auto-login{
+    font-size: 14px;
+    color: #555555;
+}
+
+.tip{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 37px;
+    display: none;
+}
+
+.tip > img{
+    position: absolute;
+    bottom: 30px;
+    margin-left: 4px;
+}
+
+.tip > div{
+    position: absolute;
+    bottom: 0px;
+    background: #F4F4F4;
+    padding: 7px 6px;
+    width: 275px;
+    height: 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.tip span{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #555555;
+    vertical-align: middle;
+}
+
+.find-id{
+    vertical-align: middle;
+}
+
+.find-id > a{
+    font-size: 16px;
+    line-height: 22px;
+    color: #0074E9;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+
+.symbol{
+    width: 8px;
+    height: 16px;
+    margin-left: 6px;
+}
+
+.input-submit > input{
+    border-radius: 2px;
+    width: 575px;
+    height: 66px;
+    border-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, .45));
+    margin: 5px .5px 22px;
+}
+
+.input-submit > input.initialization{
+    background-color: #97AABD;
+    color: #D4E0ED;
+}
+
+.input-submit > input.valid{
+    background-color: #0074E9;
+    color: #FFFFFF;
+}
+
+hr{
+    margin-top: 22px auto;
+    width: 575px;
+    size: 1px;
+    color: #CCCCCC;
+}
+
+#button_signup{
+    border-radius: 2px;
+    width: 575px;
+    height: 66px;
+    border-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, .45));
+    background-color: #FFFFFF;
+    margin: 22px .5px 40px;
+    color: #0074E9;
+    line-height: 25px;
+}
+
+footer{
+    height: 19px;
+    margin-top: 40px;
+}
+
+footer > div{
+    height: 19px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #555555;
+}
